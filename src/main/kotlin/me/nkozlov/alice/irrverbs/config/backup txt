@@ -1,0 +1,33 @@
+//    @Bean
+//    fun router() = router {
+//        //        accept(TEXT_HTML).nest {
+//        GET("/") { ServerResponse.ok().body(fromObject(arrayOf(1, 2, 3))) }
+//        GET("/sse") { ok().render("sse") }
+//            GET("/users", userHandler::findAllView)
+//        }
+//        "/api".nest {
+//            accept(APPLICATION_JSON).nest {
+//                GET("/users", userHandler::findAll)
+//            }
+//            accept(TEXT_EVENT_STREAM).nest {
+//                GET("/users", userHandler::stream)
+//            }
+//
+//        }
+//        resources("/**", ClassPathResource("static/"))
+//}
+//        .filter { request, next ->
+//        next.handle(request).flatMap {
+//            if (it is RenderingResponse) RenderingResponse.from(it).modelAttributes(attributes(request.locale(), messageSource)).build() else it.toMono()
+//        }
+//    }
+
+    //    private fun attributes(locale: Locale, messageSource: MessageSource) = mutableMapOf<String, Any>(
+//        "i18n" to Mustache.Lambda { frag, out ->
+//            val tokens = frag.execute().split("|")
+//            out.write(messageSource.getMessage(tokens[0], tokens.slice(IntRange(1, tokens.size - 1)).toTypedArray(), locale))
+//        })
+
+        //        (accept(APPLICATION_JSON) and "/alice-skill").nest {
+//            GET("/route") { _ -> ServerResponse.ok().body(fromObject(arrayOf(1, 2, 3))) }
+//        }

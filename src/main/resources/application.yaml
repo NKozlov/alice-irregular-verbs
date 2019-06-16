@@ -1,0 +1,18 @@
+server:
+    #    servlet:
+    #        context-path: /alice-skill/
+    port: 3000
+
+spring:
+    application:
+        name: alice-irregular-verbs
+
+logging:
+    level:
+        org:
+            springframework:
+                boot: DEBUG
+        #                    context:
+        #                        config: DEBUG
+        reactor.netty.tcp.TcpServer: DEBUG
+        me.nkozlov: DEBUG
